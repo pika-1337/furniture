@@ -15,3 +15,14 @@ a{
   font-size: 18px;
   font-family: 'Montserrat-Bold';
 }
+.title{
+  &::before{
+    position: absolute;
+        content: '';
+        width: 170px;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #CDA861;
+      }
+}
