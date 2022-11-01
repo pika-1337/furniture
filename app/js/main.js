@@ -1,4 +1,11 @@
 $(function(){
+
+
+    $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('');
+    
+  });
+
   $('.product__box').slick({
   infinite: false,
   dots: false ,

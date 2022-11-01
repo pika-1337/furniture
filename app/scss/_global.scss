@@ -10,6 +10,12 @@ font-family: 'Roboto-Regular';
   max-width: 1680px;
   margin: 0 auto;
 }
+.container__small{
+  padding: 0 15px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 a{
   color: #34383D; 
   font-size: 18px;
@@ -25,4 +31,23 @@ a{
         left: 0;
         background-color: #CDA861;
       }
+}
+.logo{
+  font-size: 40px;
+  line-height: 47px;
+  font-family: 'Roboto-Regular';
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34383D;
+}
+.slick-prev,
+  .slick-next{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
