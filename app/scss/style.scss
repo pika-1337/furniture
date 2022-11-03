@@ -265,6 +265,7 @@
   }
   &__box{
     display: flex;
+        margin: 0 auto;
     justify-content: center;
       &-item{
         .slick-slide {
@@ -337,7 +338,6 @@
     padding: 60px auto auto;
     text-align: center;
     background-position: center;
-    max-width: 1520px;
     height: 767px;
     margin: 0 auto;
     
@@ -473,14 +473,15 @@
     }
     &-wrapper{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      margin-bottom: 32px;
     }
     &-text{
       font-size: 22px;
       line-height: 26px;
       color: #34383D;
       font-family: 'Roboto-Medium';
-      margin-left: 54px;
+      margin-left: 10px;
       & span{
         margin-left: 40px;
         svg{
@@ -492,14 +493,13 @@
     &-cart{
       &-wrapper{
         width: 47px;
-      margin-right: 54px;
+      margin-right: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
       height:47px;
       background-color:#CDA861;
       border-radius: 50%;
-      margin-bottom: 36px;
       cursor: pointer;
       & img{
         margin: 0;
@@ -525,7 +525,6 @@
 .new__blog{
   margin: 160px 0 50px;
   &-sofa{
-    max-width: 956px;
     max-height: 415px;
     margin: 0 auto;
     &-box{
@@ -578,12 +577,14 @@
     &-box{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 114px;
+      gap: 80px;
     }
     &-item{
       max-width: 585px;
       height: 388px;
       width: 100%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
       background-image: url('/images/new__blog/home.png');

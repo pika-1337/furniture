@@ -21,17 +21,17 @@ a{
   font-size: 18px;
   font-family: 'Montserrat-Bold';
 }
-.title{
-  &::before{
-    position: absolute;
-        content: '';
-        width: 170px;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #CDA861;
-      }
-}
+// .title{
+//   &::before{
+//     position: absolute;
+//         content: '';
+//         width: 170px;
+//         height: 2px;
+//         bottom: 0;
+//         left: 0;
+//         background-color: #CDA861;
+//       }
+// }
 .logo{
   font-size: 40px;
   line-height: 47px;
@@ -50,4 +50,11 @@ a{
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+}
+.slick-arrow{
+  width: 55px;
+  min-width: 35px;
+}
+.slick-slider{
+  text-align: center;
 }

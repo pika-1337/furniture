@@ -2,7 +2,7 @@ $(function(){
 
 
     $('.menu__btn').on('click', function(){
-    $('.menu__list').toggleClass('');
+    $('.menu__list').toggleClass('menu__list--active');
     
   });
 
@@ -12,7 +12,27 @@ $(function(){
   slidesToShow: 5,
   slidesToScroll: 1,
   prevArrow:'<button type="button" class="slick-prev"><img  src="images/product/arrow-left.svg" alt="img"></button>',
-  nextArrow:'<button type="button" class="slick-next"><img src="images/product/arrow-right.svg" alt="img"></button>'
+  nextArrow:'<button type="button" class="slick-next"><img src="images/product/arrow-right.svg" alt="img"></button>',
+    responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+      {
+      breakpoint: 728,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 $(' .our__star-box').slick({
   infinite: false,
@@ -20,7 +40,27 @@ $(' .our__star-box').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow:'<button type="button" class="slick-prev"><img  src="images/product/arrow-left.svg" alt="img"></button>',
-  nextArrow:'<button type="button" class="slick-next"><img src="images/product/arrow-right.svg" alt="img"></button>'
+  nextArrow:'<button type="button" class="slick-next"><img src="images/product/arrow-right.svg" alt="img"></button>',
+      responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+      {
+      breakpoint: 728,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
