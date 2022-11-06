@@ -149,6 +149,68 @@
     }
     
   }
+  .wooden{
+    &__box{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item{
+      height: 590px;
+      &-img{
+        max-height: 300px;
+        height: 100%;
+      }
+      &-wrapper{
+        display: block;
+        &-price{
+          margin-bottom: 20px;
+        }
+        &-link{
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .subscribe{
+    &__inner{
+      padding: 100px 0 300px 0;
+      margin: 0 auto;
+      text-align: center;
+      }
+      &__form{
+        display: flex;
+        justify-content: center;
+          &-button{
+          }
+        &-wrapper{
+          max-width: 610px;
+          width: 100%;
+      }
+    }
+  }
+  .footer{
+    .logo{
+      margin: 0 auto;
+    }
+    &__inner{
+      display: block;
+    }
+    &__logo{
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20px;
+      &-text{
+        margin: 20px auto 25px;
+      }
+    }
+    &__box{
+      justify-content: space-around;
+    }
+    &__item{
+      margin: 0 auto;
+    }
+  }
 }
 
 
@@ -201,6 +263,52 @@
     &-our{
       &-box{
         grid-template-columns: (repeat(1, 1fr));
+      }
+    }
+  }
+  .wooden{
+    &__item{
+      &-img{
+      height: 250px;
+      width: 400px;
+      }
+    }
+    &__box{
+      grid-template-columns:repeat(1, 1fr);
+    }
+  }
+  .subscribe{
+    &__text{
+          margin: 0 5px 50px ;
+    }
+    &__form{
+      &-wrapper{
+        display: block;
+      }
+      &-input{
+        padding: 20px 40px;
+        margin-bottom: 20px;
+      }
+      &-button{
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  .footer{
+    &__box{
+      display: block;
+    }
+    &__logo{
+      &-text{
+        text-align: justify;
+      }
+    }
+    &__item{
+      margin: 0 auto;
+      &+&{
+        margin-left: auto;
       }
     }
   }

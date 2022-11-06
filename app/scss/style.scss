@@ -636,10 +636,13 @@
 }
 
 .people{
+  &__inner{
   padding: 80px 0;
   background-color: #F5EEE1;
   background-image: url('/images/people/people-bg.png');
   background-size: cover;
+
+  }
   &__title{
     font-size: 30px;
     line-height: 37px;
@@ -717,7 +720,7 @@
     &__box{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 80px;
+      gap: 40px;
       }
       &__item{
         max-width: 400px;
@@ -787,9 +790,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    border-radius: 50px;
     background-position: center;
     position: relative;
-    max-width: 1440px;
+    width: 100%;
     padding: 100px 0 300px 140px;
     height: 697px;
   }
@@ -868,6 +872,7 @@
         color: #34383D;
       }
       &-icons{
+        line-height: 50px;
         &-link{
         width: 30px;
         height: 30px;
@@ -883,8 +888,7 @@
     display: flex;
   }
   &__item{
-    max-width: 1900px;
-    width: 100%;
+    max-width: 190px;
     display: block;
     &:last-child{
       margin-left: 140px;
@@ -926,6 +930,7 @@
       font-size: 18px;
       line-height: 21px;
       font-family: 'Roboto-Regular';
+
     }
   }
 }
